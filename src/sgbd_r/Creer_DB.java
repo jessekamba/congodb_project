@@ -47,7 +47,7 @@ public class Creer_DB {
     String recup_database=requete[1];
     String dbname=requete[2];
     
-    if ("create".equals(recup_create) && "database".equals(recup_database))
+    if("create".equals(recup_create) && "database".equals(recup_database)|| ("CREATE".equals(recup_create) && "DATABASE".equals(recup_database)) )
     {
     String path="C:\\Users\\JESSE KAMBA\\Documents\\projet\\java\\"+dbname;
     File file = new File(path);
