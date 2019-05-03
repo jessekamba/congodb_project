@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  * @author JESSE KAMBA
  */
 public class Creer_DB {
-    
+    static String path="C:\\Users\\JESSE KAMBA\\Documents\\projet\\java\\";
      public static void creerDB() {
     
         String ligne=null;
@@ -49,7 +49,7 @@ public class Creer_DB {
     
     if("create".equals(recup_create) && "database".equals(recup_database)|| ("CREATE".equals(recup_create) && "DATABASE".equals(recup_database)) )
     {
-    String path="C:\\Users\\JESSE KAMBA\\Documents\\projet\\java\\"+dbname;
+    Creer_DB.path="C:\\Users\\JESSE KAMBA\\Documents\\projet\\java\\"+dbname;
     File file = new File(path);
 //    boolean test= file.exists();
 //        System.out.println(test);
