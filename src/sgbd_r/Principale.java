@@ -29,10 +29,10 @@ public class Principale {
      */
     public static void main(String[] args) throws IOException {
         
-        Menu lancerProgramme = new Menu();
-        lancerProgramme.menu();
-//        Creer_DB creation_DB= new Creer_DB();
-//        creation_DB.creerDB();
+//        Menu lancerProgramme = new Menu();
+//        lancerProgramme.menu();
+        Creer_DB creation_DB= new Creer_DB();
+        creation_DB.creerDB();
 //        
         Creer_Table creation_table= new Creer_Table();
         creation_table.creerTabler();
